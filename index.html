@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Discover</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+
+  <nav class="blue lighten-1" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="/index.html" class="brand-logo">
+        <img src="/assets/logos/discover.png"
+             style="width:45px;height:45px;margin-top:10px;margin-left:20px;">
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/docs.html">Docs</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/docs.html">Docs</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br>
+      <h1 class="header center blue-text">Discover</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">A static anlaysis and formal
+        verification framework for computer software</h5>
+      </div>
+      <!-- <div class="row center">
+           <a href="http://materializecss.com/getting-started.html"
+           id="download-button"
+           class="btn-large waves-effect waves-light orange">
+           Get Started
+           </a>
+           </div> -->
+      <br>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">Overview</h5>
+
+            <p class="light">
+              Discover is a static analysis and formal verification tool that
+              can automatically find security bugs and vulnerabilities in
+              program written in both general-purpose programming languages,
+              like C, C++, Go, or domain-specific languages, like Solidity (for writing smart contract).
+              Discover supports finding the following bug types:
+            </p>
+
+            <p class="light">
+              1. Memory Bugs: Memory Leaks, Null Pointer Dereference, Buffer Overflow, etc.
+            </p>
+
+            <p class="light">
+              2. Integer Bugs: Integer Overflow, Integer Underflow, Division by Zero, etc.
+            </p>
+
+            <p class="light">
+              3. Smart Contract Bugs: Reentrancy, Out of Gas, etc.
+            </p>
+
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">Approach</h5>
+
+            <p class="light">
+              Covalry is developed using the OCaml programming language. It includes two main parts:
+            </p>
+
+            <p class="light">
+              1. Compiler front-end: this module compiles input programs
+              (written in C/C++, Java, Go, Solidity, etc) to intermediate code of LLVM framework
+              (LLVM bitcode).
+            </p>
+
+            <p class="light">
+              2. Analyzer back-end: this module will perform suitable analysis
+              technique to detect each kind of bug and vulnerability. For
+              example, we use separation logic to find memory bugs, abstract
+              interpretation and data flow analysis to find integer bugs and
+              other bugs specific to detect smart contracts.
+            </p>
+
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">Easy to use</h5>
+
+            <p class="light">
+              We have provided detailed documentation as well as specific code
+              examples to help new users get started. We are also always open to
+              feedback and can answer any questions a user may have about
+              Discover.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br><br>
+  </div>
+
+  <footer class="page-footer orange lighten-1">
+    <div class="container">
+      <div class="row">
+          <h5 class="white-text">Contact Us</h5>
+          <p class="grey-text text-lighten-4">
+            We are a team of enthusiastic researchers at the Database System
+            Research Group, School of Computing, National University of
+            Singapore.
+            <br>
+            Address: COM1-01-07, 13 Computing Drive, Singapore 117417.
+            Email: <a class="white-text" href="mailto:dbsystem@comp.nus.edu.sg">dbsystem@comp.nus.edu.sg</a>.
+            Phone: +65 6516 4774
+          </p>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        <span class="white-text">&copy; 2020
+          <a class="white-text" href="https://www.comp.nus.edu.sg/~dbsystem/">
+            NUS Database System Research Group.
+          </a>
+        </span>
+        <span class="white-text">This website is created using the
+          <a class="white-text" href="https://materializecss.com/">Materialize</a> theme.
+        </span>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
